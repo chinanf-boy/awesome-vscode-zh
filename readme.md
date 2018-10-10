@@ -17,10 +17,9 @@
 <!-- repo = 'viatsko/awesome-vscode' -->
 <!-- commit = '3f21014dd86f0237990b33a57299aff2b5067ef5' -->
 <!-- time = '2018-10-09' -->
-
-| 翻译的原文 | 与日期        | 最新更新 | 更多                       |
-| ---------- | ------------- | -------- | -------------------------- |
-| [commit]   | ⏰ 2018-10-09 | ![last]  | [中文翻译][translate-list] |
+翻译的原文 | 与日期 | 最新更新 | 更多
+---|---|---|---
+[commit] | ⏰ 2018-10-09 | ![last] | [中文翻译][translate-list]
 
 [last]: https://img.shields.io/github/last-commit/viatsko/awesome-vscode.svg
 [commit]: https://github.com/viatsko/awesome-vscode/tree/3f21014dd86f0237990b33a57299aff2b5067ef5
