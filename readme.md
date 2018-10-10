@@ -11,7 +11,7 @@
 
 ---
 
-## 校对 🀄️
+## 校对 ✅
 
 <!-- doc-templite START generated -->
 <!-- repo = 'viatsko/awesome-vscode' -->
@@ -53,9 +53,399 @@
 
 # 目录表
 
-<!-- START doctoc -->
-
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- END doctoc -->
+
+- [官方的](#%E5%AE%98%E6%96%B9%E7%9A%84)
+- [语法](#%E8%AF%AD%E6%B3%95)
+- [从其他编辑器迁移](#%E4%BB%8E%E5%85%B6%E4%BB%96%E7%BC%96%E8%BE%91%E5%99%A8%E8%BF%81%E7%A7%BB)
+  - [从Vim迁移](#%E4%BB%8Evim%E8%BF%81%E7%A7%BB)
+  - [atom迁移](#atom%E8%BF%81%E7%A7%BB)
+  - [从Sublime Text迁移](#%E4%BB%8Esublime-text%E8%BF%81%E7%A7%BB)
+  - [从Visual Studio迁移](#%E4%BB%8Evisual-studio%E8%BF%81%E7%A7%BB)
+  - [从Intellij IDEA迁移](#%E4%BB%8Eintellij-idea%E8%BF%81%E7%A7%BB)
+- [Lint与智能提示](#lint%E4%B8%8E%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+  - [1C](#1c)
+  - [Bash](#bash)
+  - [C++](#c)
+  - [`C\#`](#c%5C)
+  - [CSS](#css)
+    - [CSS Peek](#css-peek)
+  - [Go](#go)
+  - [Haskell](#haskell)
+  - [Shell](#shell)
+  - [Java](#java)
+  - [JavaScript](#javascript)
+    - [Chrome调试器](#chrome%E8%B0%83%E8%AF%95%E5%99%A8)
+  - [TypeScript](#typescript)
+  - [Markdown](#markdown)
+  - [PHP](#php)
+    - [智能提示](#%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+    - [Laravel](#laravel)
+    - [Twig](#twig)
+    - [其他扩展](#%E5%85%B6%E4%BB%96%E6%89%A9%E5%B1%95)
+    - [更多](#%E6%9B%B4%E5%A4%9A)
+  - [Python](#python)
+  - [ReasonML](#reasonml)
+  - [Rust](#rust)
+- [生产力](#%E7%94%9F%E4%BA%A7%E5%8A%9B)
+  - [Azure Cosmos DB](#azure-cosmos-db)
+  - [Azure IOT 工具包](#azure-iot-%E5%B7%A5%E5%85%B7%E5%8C%85)
+  - [书签](#%E4%B9%A6%E7%AD%BE)
+  - [创建测试](#%E5%88%9B%E5%BB%BA%E6%B5%8B%E8%AF%95)
+  - [部署](#%E9%83%A8%E7%BD%B2)
+    - [Gi](#gi)
+  - [GIT历史](#git%E5%8E%86%E5%8F%B2)
+  - [项目经理](#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86)
+  - [GitLink](#gitlink)
+  - [GitLens](#gitlens)
+  - [GIT指标](#git%E6%8C%87%E6%A0%87)
+  - [GitHub](#github)
+  - [Github Pull请求监控器](#github-pull%E8%AF%B7%E6%B1%82%E7%9B%91%E6%8E%A7%E5%99%A8)
+  - [Icon字体](#icon%E5%AD%97%E4%BD%93)
+  - [JS参数注释](#js%E5%8F%82%E6%95%B0%E6%B3%A8%E9%87%8A)
+  - [Kanban](#kanban)
+  - [live服务器](#%08live%E6%9C%8D%E5%8A%A1%E5%99%A8)
+  - [多剪贴板](#%E5%A4%9A%E5%89%AA%E8%B4%B4%E6%9D%BF)
+  - [核心测试资源管理器](#%E6%A0%B8%E5%BF%83%E6%B5%8B%E8%AF%95%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8)
+  - [npm智能提示](#npm%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+  - [部分Diff](#%E9%83%A8%E5%88%86diff)
+    - [将JSON解析成代码](#%E5%B0%86json%E8%A7%A3%E6%9E%90%E6%88%90%E4%BB%A3%E7%A0%81)
+  - [路径感知](#%E8%B7%AF%E5%BE%84%E6%84%9F%E7%9F%A5)
+  - [项目经理](#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86-1)
+  - [REST客户端](#rest%E5%AE%A2%E6%88%B7%E7%AB%AF)
+  - [设置同步](#%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%AD%A5)
+  - [Todo树](#todo%E6%A0%91)
+  - [切换引号](#%E5%88%87%E6%8D%A2%E5%BC%95%E5%8F%B7)
+  - [Yo](#yo)
+- [格式化与美化](#%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8E%E7%BE%8E%E5%8C%96)
+  - [Better Align - 更好地对齐](#better-align---%E6%9B%B4%E5%A5%BD%E5%9C%B0%E5%AF%B9%E9%BD%90)
+  - [自动关闭标签](#%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE)
+  - [自动重命名标签](#%E8%87%AA%E5%8A%A8%E9%87%8D%E5%91%BD%E5%90%8D%E6%A0%87%E7%AD%BE)
+  - [beautify](#beautify)
+    - [html2pug](#html2pug)
+  - [ECMAScript 引号转换器](#ecmascript-%E5%BC%95%E5%8F%B7%E8%BD%AC%E6%8D%A2%E5%99%A8)
+  - [粘贴和缩进](#%E7%B2%98%E8%B4%B4%E5%92%8C%E7%BC%A9%E8%BF%9B)
+  - [排序线](#%E6%8E%92%E5%BA%8F%E7%BA%BF)
+  - [Surround](#surround)
+  - [包装选择](#%E5%8C%85%E8%A3%85%E9%80%89%E6%8B%A9)
+  - [格式化开关](#%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%BC%80%E5%85%B3)
+  - [Bracket 颜色器对](#bracket-%E9%A2%9C%E8%89%B2%E5%99%A8%E5%AF%B9)
+  - [自动导入](#%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5)
+  - [探险 Icons](#%E6%8E%A2%E9%99%A9-icons)
+    - [城市灯光 Icons](#%E5%9F%8E%E5%B8%82%E7%81%AF%E5%85%89-icons)
+    - [VScode Icons](#vscode-icons)
+    - [Seti Icons](#seti-icons)
+    - [Material Icons主题](#material-icons%E4%B8%BB%E9%A2%98)
+- [未分类](#%E6%9C%AA%E5%88%86%E7%B1%BB)
+  - [代码 运行器](#%E4%BB%A3%E7%A0%81-%E8%BF%90%E8%A1%8C%E5%99%A8)
+  - [彩色高亮](#%E5%BD%A9%E8%89%B2%E9%AB%98%E4%BA%AE)
+  - [颜色输出](#%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA)
+  - [Dash](#dash)
+  - [用shell命令编辑](#%E7%94%A8shell%E5%91%BD%E4%BB%A4%E7%BC%96%E8%BE%91)
+  - [VScode编辑器配置](#vscode%E7%BC%96%E8%BE%91%E5%99%A8%E9%85%8D%E7%BD%AE)
+  - [FTP同步](#ftp%E5%90%8C%E6%AD%A5)
+  - [PlatformIO](#platformio)
+  - [Polacode](#polacode)
+  - [Quokka](#quokka)
+  - [远程工作空间](#%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4)
+  - [Runner](#runner)
+  - [Slack](#slack)
+    - [Spotify](#spotify)
+  - [SVG阅读器](#svg%E9%98%85%E8%AF%BB%E5%99%A8)
+  - [文本标记(萤光笔)](#%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%90%A4%E5%85%89%E7%AC%94)
+- [主题](#%E4%B8%BB%E9%A2%98)
+  - [用户界面](#%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2)
+  - [语法](#%E8%AF%AD%E6%B3%95-1)
+    - [An Old Hope Theme by Dustin Sanders](#an-old-hope-theme-by-dustin-sanders)
+    - [Ariake Dark 来自 wart](#ariake-dark-%E6%9D%A5%E8%87%AA-wart)
+    - [Atom One Dark Theme by Mahmoud Ali ](#atom-one-dark-theme-by-mahmoud-ali)
+    - [Ayu by teabyii](#ayu-by-teabyii)
+    - [Captain Sweetheart by ultradracula](#captain-sweetheart-by-ultradracula)
+    - [City Lights by Yummygumm](#city-lights-by-yummygumm)
+    - [Cobalt2 Theme Official by Wes Bos](#cobalt2-theme-official-by-wes-bos)
+    - [Dracula Official by Dracula Theme](#dracula-official-by-dracula-theme)
+    - [Edge by Bogdan Lazar](#edge-by-bogdan-lazar)
+    - [Eva Theme by fisheva](#eva-theme-by-fisheva)
+    - [Fairy Floss by nopjmp and sailorhg](#fairy-floss-by-nopjmp-and-sailorhg)
+    - [GitHub Theme by Thomas Pink](#github-theme-by-thomas-pink)
+    - [Material Palenight Theme by whizkydee](#material-palenight-theme-by-whizkydee)
+    - [Material Theme by Mattia Astorino](#material-theme-by-mattia-astorino)
+    - [Mno by u29dc](#mno-by-u29dc)
+    - [Night Owl by Sarah Drasner](#night-owl-by-sarah-drasner)
+    - [Plastic by Will Stone](#plastic-by-will-stone)
+    - [Nord by arcticicestudio](#nord-by-arcticicestudio)
+    - [Shades of Purple by Ahmad Awais](#shades-of-purple-by-ahmad-awais)
+- [跟随的人](#%E8%B7%9F%E9%9A%8F%E7%9A%84%E4%BA%BA)
+- [扩展开发者的资源](#%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E8%B5%84%E6%BA%90)
+  - [文档](#%E6%96%87%E6%A1%A3)
+  - [库](#%E5%BA%93)
+  - [特别适合单元测试.](#%E7%89%B9%E5%88%AB%E9%80%82%E5%90%88%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+- [贡献](#%E8%B4%A1%E7%8C%AE)
+- [许可证](#%E8%AE%B8%E5%8F%AF%E8%AF%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+- [官方的](#%E5%AE%98%E6%96%B9%E7%9A%84)
+- [语法](#%E8%AF%AD%E6%B3%95)
+- [从其他编辑器迁移](#%E4%BB%8E%E5%85%B6%E4%BB%96%E7%BC%96%E8%BE%91%E5%99%A8%E8%BF%81%E7%A7%BB)
+  - [从Vim迁移](#%E4%BB%8Evim%E8%BF%81%E7%A7%BB)
+  - [atom迁移](#atom%E8%BF%81%E7%A7%BB)
+  - [从Sublime Text迁移](#%E4%BB%8Esublime-text%E8%BF%81%E7%A7%BB)
+  - [从Visual Studio迁移](#%E4%BB%8Evisual-studio%E8%BF%81%E7%A7%BB)
+  - [从Intellij IDEA迁移](#%E4%BB%8Eintellij-idea%E8%BF%81%E7%A7%BB)
+- [Lint与智能提示](#lint%E4%B8%8E%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+  - [1C](#1c)
+  - [Bash](#bash)
+  - [C++](#c)
+  - [`C#`](#c)
+  - [CSS](#css)
+    - [CSS Peek](#css-peek)
+  - [Go](#go)
+  - [Haskell](#haskell)
+  - [Shell](#shell)
+  - [Java](#java)
+  - [JavaScript](#javascript)
+    - [Chrome调试器](#chrome%E8%B0%83%E8%AF%95%E5%99%A8)
+  - [TypeScript](#typescript)
+  - [Markdown](#markdown)
+  - [PHP](#php)
+    - [智能提示](#%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+    - [Laravel](#laravel)
+    - [Twig](#twig)
+    - [其他扩展](#%E5%85%B6%E4%BB%96%E6%89%A9%E5%B1%95)
+    - [更多](#%E6%9B%B4%E5%A4%9A)
+  - [Python](#python)
+  - [ReasonML](#reasonml)
+  - [Rust](#rust)
+- [生产力](#%E7%94%9F%E4%BA%A7%E5%8A%9B)
+  - [Azure Cosmos DB](#azure-cosmos-db)
+  - [Azure IOT 工具包](#azure-iot-%E5%B7%A5%E5%85%B7%E5%8C%85)
+  - [书签](#%E4%B9%A6%E7%AD%BE)
+  - [创建测试](#%E5%88%9B%E5%BB%BA%E6%B5%8B%E8%AF%95)
+  - [部署](#%E9%83%A8%E7%BD%B2)
+    - [Gi](#gi)
+  - [GIT历史](#git%E5%8E%86%E5%8F%B2)
+  - [项目经理](#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86)
+  - [GitLink](#gitlink)
+  - [GitLens](#gitlens)
+  - [GIT指标](#git%E6%8C%87%E6%A0%87)
+  - [GitHub](#github)
+  - [Github Pull请求监控器](#github-pull%E8%AF%B7%E6%B1%82%E7%9B%91%E6%8E%A7%E5%99%A8)
+  - [Icon字体](#icon%E5%AD%97%E4%BD%93)
+  - [JS参数注释](#js%E5%8F%82%E6%95%B0%E6%B3%A8%E9%87%8A)
+  - [Kanban](#kanban)
+  - [live服务器](#%08live%E6%9C%8D%E5%8A%A1%E5%99%A8)
+  - [多剪贴板](#%E5%A4%9A%E5%89%AA%E8%B4%B4%E6%9D%BF)
+  - [核心测试资源管理器](#%E6%A0%B8%E5%BF%83%E6%B5%8B%E8%AF%95%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8)
+  - [npm智能提示](#npm%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+  - [部分Diff](#%E9%83%A8%E5%88%86diff)
+    - [将JSON解析成代码](#%E5%B0%86json%E8%A7%A3%E6%9E%90%E6%88%90%E4%BB%A3%E7%A0%81)
+  - [路径感知](#%E8%B7%AF%E5%BE%84%E6%84%9F%E7%9F%A5)
+  - [项目经理](#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86-1)
+  - [REST客户端](#rest%E5%AE%A2%E6%88%B7%E7%AB%AF)
+  - [设置同步](#%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%AD%A5)
+  - [Todo树](#todo%E6%A0%91)
+  - [切换引号](#%E5%88%87%E6%8D%A2%E5%BC%95%E5%8F%B7)
+  - [Yo](#yo)
+- [格式化与美化](#%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8E%E7%BE%8E%E5%8C%96)
+  - [Better Align - 更好地对齐](#better-align---%E6%9B%B4%E5%A5%BD%E5%9C%B0%E5%AF%B9%E9%BD%90)
+  - [自动关闭标签](#%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE)
+  - [自动重命名标签](#%E8%87%AA%E5%8A%A8%E9%87%8D%E5%91%BD%E5%90%8D%E6%A0%87%E7%AD%BE)
+  - [beautify](#beautify)
+    - [html2pug](#html2pug)
+  - [ECMAScript 引号转换器](#ecmascript-%E5%BC%95%E5%8F%B7%E8%BD%AC%E6%8D%A2%E5%99%A8)
+  - [粘贴和缩进](#%E7%B2%98%E8%B4%B4%E5%92%8C%E7%BC%A9%E8%BF%9B)
+  - [排序线](#%E6%8E%92%E5%BA%8F%E7%BA%BF)
+  - [Surround](#surround)
+  - [包装选择](#%E5%8C%85%E8%A3%85%E9%80%89%E6%8B%A9)
+  - [格式化开关](#%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%BC%80%E5%85%B3)
+  - [Bracket 颜色器对](#bracket-%E9%A2%9C%E8%89%B2%E5%99%A8%E5%AF%B9)
+  - [自动导入](#%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5)
+  - [探险 Icons](#%E6%8E%A2%E9%99%A9-icons)
+    - [城市灯光 Icons](#%E5%9F%8E%E5%B8%82%E7%81%AF%E5%85%89-icons)
+    - [VScode Icons](#vscode-icons)
+    - [Seti Icons](#seti-icons)
+    - [Material Icons主题](#material-icons%E4%B8%BB%E9%A2%98)
+- [未分类](#%E6%9C%AA%E5%88%86%E7%B1%BB)
+  - [代码 运行器](#%E4%BB%A3%E7%A0%81-%E8%BF%90%E8%A1%8C%E5%99%A8)
+  - [彩色高亮](#%E5%BD%A9%E8%89%B2%E9%AB%98%E4%BA%AE)
+  - [颜色输出](#%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA)
+  - [Dash](#dash)
+  - [用shell命令编辑](#%E7%94%A8shell%E5%91%BD%E4%BB%A4%E7%BC%96%E8%BE%91)
+  - [VScode编辑器配置](#vscode%E7%BC%96%E8%BE%91%E5%99%A8%E9%85%8D%E7%BD%AE)
+  - [FTP同步](#ftp%E5%90%8C%E6%AD%A5)
+  - [PlatformIO](#platformio)
+  - [Polacode](#polacode)
+  - [Quokka](#quokka)
+  - [远程工作空间](#%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4)
+  - [Runner](#runner)
+  - [Slack](#slack)
+    - [Spotify](#spotify)
+  - [SVG阅读器](#svg%E9%98%85%E8%AF%BB%E5%99%A8)
+  - [文本标记(萤光笔)](#%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%90%A4%E5%85%89%E7%AC%94)
+- [主题](#%E4%B8%BB%E9%A2%98)
+  - [用户界面](#%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2)
+  - [语法](#%E8%AF%AD%E6%B3%95-1)
+    - [An Old Hope Theme by Dustin Sanders](#an-old-hope-theme-by-dustin-sanders)
+    - [Ariake Dark 来自 wart](#ariake-dark-%E6%9D%A5%E8%87%AA-wart)
+    - [Atom One Dark Theme by Mahmoud Ali ](#atom-one-dark-theme-by-mahmoud-ali)
+    - [Ayu by teabyii](#ayu-by-teabyii)
+    - [Captain Sweetheart by ultradracula](#captain-sweetheart-by-ultradracula)
+    - [City Lights by Yummygumm](#city-lights-by-yummygumm)
+    - [Cobalt2 Theme Official by Wes Bos](#cobalt2-theme-official-by-wes-bos)
+    - [Dracula Official by Dracula Theme](#dracula-official-by-dracula-theme)
+    - [Edge by Bogdan Lazar](#edge-by-bogdan-lazar)
+    - [Eva Theme by fisheva](#eva-theme-by-fisheva)
+    - [Fairy Floss by nopjmp and sailorhg](#fairy-floss-by-nopjmp-and-sailorhg)
+    - [GitHub Theme by Thomas Pink](#github-theme-by-thomas-pink)
+    - [Material Palenight Theme by whizkydee](#material-palenight-theme-by-whizkydee)
+    - [Material Theme by Mattia Astorino](#material-theme-by-mattia-astorino)
+    - [Mno by u29dc](#mno-by-u29dc)
+    - [Night Owl by Sarah Drasner](#night-owl-by-sarah-drasner)
+    - [Plastic by Will Stone](#plastic-by-will-stone)
+    - [Nord by arcticicestudio](#nord-by-arcticicestudio)
+    - [Shades of Purple by Ahmad Awais](#shades-of-purple-by-ahmad-awais)
+- [跟随的人](#%E8%B7%9F%E9%9A%8F%E7%9A%84%E4%BA%BA)
+- [扩展开发者的资源](#%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E8%B5%84%E6%BA%90)
+  - [文档](#%E6%96%87%E6%A1%A3)
+  - [库](#%E5%BA%93)
+  - [特别适合单元测试.](#%E7%89%B9%E5%88%AB%E9%80%82%E5%90%88%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+- [贡献](#%E8%B4%A1%E7%8C%AE)
+- [许可证](#%E8%AE%B8%E5%8F%AF%E8%AF%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+- [官方的](#%E5%AE%98%E6%96%B9%E7%9A%84)
+- [语法](#%E8%AF%AD%E6%B3%95)
+- [从其他编辑器迁移](#%E4%BB%8E%E5%85%B6%E4%BB%96%E7%BC%96%E8%BE%91%E5%99%A8%E8%BF%81%E7%A7%BB)
+  - [从Vim迁移](#%E4%BB%8Evim%E8%BF%81%E7%A7%BB)
+  - [atom迁移](#atom%E8%BF%81%E7%A7%BB)
+  - [从Sublime Text迁移](#%E4%BB%8Esublime-text%E8%BF%81%E7%A7%BB)
+  - [从Visual Studio迁移](#%E4%BB%8Evisual-studio%E8%BF%81%E7%A7%BB)
+  - [从Intellij IDEA迁移](#%E4%BB%8Eintellij-idea%E8%BF%81%E7%A7%BB)
+- [Lint与智能提示](#lint%E4%B8%8E%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+  - [1C](#1c)
+  - [Bash](#bash)
+  - [C++](#c)
+  - [C\](#c%5C)
+  - [CSS](#css)
+    - [CSS Peek](#css-peek)
+  - [Go](#go)
+  - [Haskell](#haskell)
+  - [Shell](#shell)
+  - [Java](#java)
+  - [JavaScript](#javascript)
+    - [Chrome调试器](#chrome%E8%B0%83%E8%AF%95%E5%99%A8)
+  - [TypeScript](#typescript)
+  - [Markdown](#markdown)
+  - [PHP](#php)
+    - [智能提示](#%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+    - [Laravel](#laravel)
+    - [Twig](#twig)
+    - [其他扩展](#%E5%85%B6%E4%BB%96%E6%89%A9%E5%B1%95)
+    - [更多](#%E6%9B%B4%E5%A4%9A)
+  - [Python](#python)
+  - [ReasonML](#reasonml)
+  - [Rust](#rust)
+- [生产力](#%E7%94%9F%E4%BA%A7%E5%8A%9B)
+  - [Azure Cosmos DB](#azure-cosmos-db)
+  - [Azure IOT 工具包](#azure-iot-%E5%B7%A5%E5%85%B7%E5%8C%85)
+  - [书签](#%E4%B9%A6%E7%AD%BE)
+  - [创建测试](#%E5%88%9B%E5%BB%BA%E6%B5%8B%E8%AF%95)
+  - [部署](#%E9%83%A8%E7%BD%B2)
+    - [Gi](#gi)
+  - [GIT历史](#git%E5%8E%86%E5%8F%B2)
+  - [项目经理](#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86)
+  - [GitLink](#gitlink)
+  - [GitLens](#gitlens)
+  - [GIT指标](#git%E6%8C%87%E6%A0%87)
+  - [GitHub](#github)
+  - [Github Pull请求监控器](#github-pull%E8%AF%B7%E6%B1%82%E7%9B%91%E6%8E%A7%E5%99%A8)
+  - [Icon字体](#icon%E5%AD%97%E4%BD%93)
+  - [JS参数注释](#js%E5%8F%82%E6%95%B0%E6%B3%A8%E9%87%8A)
+  - [Kanban](#kanban)
+  - [live服务器](#%08live%E6%9C%8D%E5%8A%A1%E5%99%A8)
+  - [多剪贴板](#%E5%A4%9A%E5%89%AA%E8%B4%B4%E6%9D%BF)
+  - [核心测试资源管理器](#%E6%A0%B8%E5%BF%83%E6%B5%8B%E8%AF%95%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8)
+  - [npm智能提示](#npm%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA)
+  - [部分Diff](#%E9%83%A8%E5%88%86diff)
+    - [将JSON解析成代码](#%E5%B0%86json%E8%A7%A3%E6%9E%90%E6%88%90%E4%BB%A3%E7%A0%81)
+  - [路径感知](#%E8%B7%AF%E5%BE%84%E6%84%9F%E7%9F%A5)
+  - [项目经理](#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86-1)
+  - [REST客户端](#rest%E5%AE%A2%E6%88%B7%E7%AB%AF)
+  - [设置同步](#%E8%AE%BE%E7%BD%AE%E5%90%8C%E6%AD%A5)
+  - [Todo树](#todo%E6%A0%91)
+  - [切换引号](#%E5%88%87%E6%8D%A2%E5%BC%95%E5%8F%B7)
+  - [Yo](#yo)
+- [格式化与美化](#%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8E%E7%BE%8E%E5%8C%96)
+  - [Better Align - 更好地对齐](#better-align---%E6%9B%B4%E5%A5%BD%E5%9C%B0%E5%AF%B9%E9%BD%90)
+  - [自动关闭标签](#%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE)
+  - [自动重命名标签](#%E8%87%AA%E5%8A%A8%E9%87%8D%E5%91%BD%E5%90%8D%E6%A0%87%E7%AD%BE)
+  - [beautify](#beautify)
+    - [html2pug](#html2pug)
+  - [ECMAScript 引号转换器](#ecmascript-%E5%BC%95%E5%8F%B7%E8%BD%AC%E6%8D%A2%E5%99%A8)
+  - [粘贴和缩进](#%E7%B2%98%E8%B4%B4%E5%92%8C%E7%BC%A9%E8%BF%9B)
+  - [排序线](#%E6%8E%92%E5%BA%8F%E7%BA%BF)
+  - [Surround](#surround)
+  - [包装选择](#%E5%8C%85%E8%A3%85%E9%80%89%E6%8B%A9)
+  - [格式化开关](#%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%BC%80%E5%85%B3)
+  - [Bracket 颜色器对](#bracket-%E9%A2%9C%E8%89%B2%E5%99%A8%E5%AF%B9)
+  - [自动导入](#%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5)
+  - [探险 Icons](#%E6%8E%A2%E9%99%A9-icons)
+    - [城市灯光 Icons](#%E5%9F%8E%E5%B8%82%E7%81%AF%E5%85%89-icons)
+    - [VScode Icons](#vscode-icons)
+    - [Seti Icons](#seti-icons)
+    - [Material Icons主题](#material-icons%E4%B8%BB%E9%A2%98)
+- [未分类](#%E6%9C%AA%E5%88%86%E7%B1%BB)
+  - [代码 运行器](#%E4%BB%A3%E7%A0%81-%E8%BF%90%E8%A1%8C%E5%99%A8)
+  - [彩色高亮](#%E5%BD%A9%E8%89%B2%E9%AB%98%E4%BA%AE)
+  - [颜色输出](#%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA)
+  - [Dash](#dash)
+  - [用shell命令编辑](#%E7%94%A8shell%E5%91%BD%E4%BB%A4%E7%BC%96%E8%BE%91)
+  - [VScode编辑器配置](#vscode%E7%BC%96%E8%BE%91%E5%99%A8%E9%85%8D%E7%BD%AE)
+  - [FTP同步](#ftp%E5%90%8C%E6%AD%A5)
+  - [PlatformIO](#platformio)
+  - [Polacode](#polacode)
+  - [Quokka](#quokka)
+  - [远程工作空间](#%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4)
+  - [Runner](#runner)
+  - [Slack](#slack)
+    - [Spotify](#spotify)
+  - [SVG阅读器](#svg%E9%98%85%E8%AF%BB%E5%99%A8)
+  - [文本标记(萤光笔)](#%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%90%A4%E5%85%89%E7%AC%94)
+- [主题](#%E4%B8%BB%E9%A2%98)
+  - [用户界面](#%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2)
+  - [语法](#%E8%AF%AD%E6%B3%95-1)
+    - [An Old Hope Theme by Dustin Sanders](#an-old-hope-theme-by-dustin-sanders)
+    - [Ariake Dark 来自 wart](#ariake-dark-%E6%9D%A5%E8%87%AA-wart)
+    - [Atom One Dark Theme by Mahmoud Ali ](#atom-one-dark-theme-by-mahmoud-ali)
+    - [Ayu by teabyii](#ayu-by-teabyii)
+    - [Captain Sweetheart by ultradracula](#captain-sweetheart-by-ultradracula)
+    - [City Lights by Yummygumm](#city-lights-by-yummygumm)
+    - [Cobalt2 Theme Official by Wes Bos](#cobalt2-theme-official-by-wes-bos)
+    - [Dracula Official by Dracula Theme](#dracula-official-by-dracula-theme)
+    - [Edge by Bogdan Lazar](#edge-by-bogdan-lazar)
+    - [Eva Theme by fisheva](#eva-theme-by-fisheva)
+    - [Fairy Floss by nopjmp and sailorhg](#fairy-floss-by-nopjmp-and-sailorhg)
+    - [GitHub Theme by Thomas Pink](#github-theme-by-thomas-pink)
+    - [Material Palenight Theme by whizkydee](#material-palenight-theme-by-whizkydee)
+    - [Material Theme by Mattia Astorino](#material-theme-by-mattia-astorino)
+    - [Mno by u29dc](#mno-by-u29dc)
+    - [Night Owl by Sarah Drasner](#night-owl-by-sarah-drasner)
+    - [Plastic by Will Stone](#plastic-by-will-stone)
+    - [Nord by arcticicestudio](#nord-by-arcticicestudio)
+    - [Shades of Purple by Ahmad Awais](#shades-of-purple-by-ahmad-awais)
+- [跟随的人](#%E8%B7%9F%E9%9A%8F%E7%9A%84%E4%BA%BA)
+- [扩展开发者的资源](#%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E8%B5%84%E6%BA%90)
+  - [文档](#%E6%96%87%E6%A1%A3)
+  - [库](#%E5%BA%93)
+  - [特别适合单元测试.](#%E7%89%B9%E5%88%AB%E9%80%82%E5%90%88%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+- [贡献](#%E8%B4%A1%E7%8C%AE)
+- [许可证](#%E8%AE%B8%E5%8F%AF%E8%AF%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # 官方的
 
@@ -104,7 +494,7 @@
 
 # 从其他编辑器迁移
 
-VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无缝和简单的.
+VSCode团队为流行的编辑器中提供Keymaps,使得过渡VSCode几乎是无缝和简单的.
 
 ## [从Vim迁移](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
@@ -112,7 +502,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ## [atom迁移](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings)
 
-> 给VisualStudio代码 的 流行atom 按键绑定
+> 给VSCode 的 流行atom 按键绑定
 
 ## [从Sublime Text迁移](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 
@@ -132,7 +522,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 > lint最初是给一个特定的程序起的名字,这个程序在C语言源代码中标记了一些可疑的和不可移植的构造(可能是bug).这个术语现在普遍应用于标记出任何计算机语言编写软件的可疑用法的工具.
 
-与其他一些编辑器不同,VScode支持智能提示、linting、开箱即用,并且不需要任何单独的扩展来运行linter包.有些linters已经集成在VScode中,您可以在正式文档[语言文字](https://code.visualstudio.com/Docs/languages/overview)部分中找到完整的列表.
+与其他一些编辑器不同,VScode支持智能提示、linting、开箱即用,并且不需要任何单独的扩展来运行linter包.有些linters已经集成在VScode中,您可以在正式文档[languages](https://code.visualstudio.com/Docs/languages/overview)章节中找到完整的列表.
 
 ## 1C
 
@@ -151,7 +541,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 - [YouCompleteMe](https://marketplace.visualstudio.com/items?itemName=RichardHe.you-complete-me)-为C/C++ (和用[YouCompleteMe](http://valloric.github.io/YouCompleteMe/)为TypeScript、JavaScript、Objtovi-C、Golang、Rust)提供语义完整性.
 -   [C/C++ Clang Command Adapter命令适配器](https://github.com/mitaki28/vscode-clang)-使用Clang命令为`C/C++/Objective-C`补全和诊断.
 
-## C\#
+## `C\#`
 
 -   [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)-预览C\#扩展来自[微软](https://www.microsoft.com),读[官方文件](https://code.visualstudio.com/docs/languages/csharp)细节问题
 
@@ -245,7 +635,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ![Laravel Model Snippets animation](https://raw.githubusercontent.com/ahinkle/vscode-laravel-model-snippets/master/images/example.gif)
 
--   [Laravel Artisan](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan) VisualStudio代码中的Laravel Artisan命令
+-   [Laravel Artisan](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan) VSCode中的Laravel Artisan命令
 
 ![Laravel Artisan commands within Visual Studio Code animation](https://raw.githubusercontent.com/TheColorRed/vscode-laravel-artisan/master/images/screens/make-controller.gif)
 
@@ -270,15 +660,15 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 ### 其他扩展
 
 -   [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer)
--   [PHP调试](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)XDebug VisualStudio代码扩展
+-   [PHP调试](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) XDebug VSCode扩展
 -   [PHP 文档器](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
--   [PHP CS fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer)PHP CS fixer扩展为VScode,PHP格式化程序,PHP代码美化工具
--   [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs)VisualStudio代码的PHP CodeSniffer
--   [phpfmt](https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt)用于VisualStudio代码的phpfmt
+-   [PHP CS fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer) PHP CS fixer扩展,PHP格式化程序,PHP代码美化工具
+-   [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) VSCode的PHP CodeSniffer
+-   [phpfmt](https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt) 用于VSCode的phpfmt
 
 ### 更多
 
--   [为Drupal配置VisualStudio代码](https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code)
+-   [为Drupal配置VSCode](https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code)
 
 ## Python
 
@@ -356,7 +746,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ## [GIT指标](https://marketplace.visualstudio.com/items?itemName=lamartire.git-indicators)
 
-> atom样式的力l板上的Git指示器
+> atom样式的状态栏上的Git指示器
 
 ![git added indicator screenshot](https://raw.githubusercontent.com/lamartire/vscode-git-indicators/master/preview/added.png)
 ![git removed indicator screenshot](https://raw.githubusercontent.com/lamartire/vscode-git-indicators/master/preview/removed.png)
@@ -386,9 +776,9 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ![kanban](https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo1.gif)
 
-> 在VisualStudio代码中使用的简单看板,具有时间跟踪和Markdown支持.
+> 在VSCode中使用的简单看板,具有时间跟踪和Markdown支持.
 
-## [直播服务器](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+## [live服务器](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 > 使用静态和动态页面的live reload特性,开发本地启动服务器.
 
@@ -404,9 +794,9 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ![View and run your .NET Core tests directly in the editor animation](https://raw.githubusercontent.com/formulahendry/vscode-dotnet-test-explorer/master/images/test-explorer.gif)
 
-## [NPM智能提示](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+## [npm智能提示](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
-> VisualStudio代码插件,自动补全导入语句中的NPM模块.
+> VSCode插件,自动补全导入语句中的NPM模块.
 
 ![npm-intellisense](https://raw.githubusercontent.com/ChristianKohler/NpmIntellisense/master/images/auto_complete.gif)
 
@@ -416,7 +806,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ![Partial Diff](https://raw.githubusercontent.com/ryu1kn/vscode-partial-diff/master/images/public.gif)
 
-### [将JSON粘贴为代码](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+### [将JSON解析成代码](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
 > 推断JSON和, 粘贴成许多编程语言的类型结构.
 
@@ -424,7 +814,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ## [路径感知](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-> 自动补全文件名的VisualStudio代码插件
+> 自动补全文件名的VSCode插件
 
 ![Autocompletion for filenames animation](https://i.giphy.com/iaHeUiDeTUZuo.gif)
 
@@ -436,7 +826,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ## [REST客户端](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
-> 允许您发送HTTP请求,并直接在VisualStudio代码中查看响应.
+> 允许您发送HTTP请求,并直接在VSCode中查看响应.
 
 ![Send HTTP request and view response animation](https://raw.githubusercontent.com/Huachao/vscode-restclient/master/images/usage.gif)
 
@@ -492,7 +882,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ### [html2pug](https://marketplace.visualstudio.com/items?itemName=dbalas.vscode-html2pug)
 
-> 在您的VisualStudio代码中转换HTML到Pug,不再使用外部页面.
+> 在您的VSCode中转换HTML到Pug,不再使用外部页面.
 
 ## [ECMAScript 引号转换器](https://marketplace.visualstudio.com/items?itemName=vilicvane.es-quotes)
 
@@ -540,7 +930,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ![Auto import](https://gifyu.com/images/autoimport.gif)
 
-## 探险家 Icons
+## 探险 Icons
 
 ### [城市灯光 Icons](https://marketplace.visualstudio.com/items?itemName=Yummygum.city-lights-icon-vsc)
 
@@ -570,7 +960,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 > 在编辑器中突出显示网页颜色
 
-![Highlight web colors in your editor screenshot](https://cdn-images-1.medium.com/max/1600/1*ZwE7OHKR5opvDCJJOw9KeQ.png)
+![Highlight web colors in your editor screenshot 图片](https://cdn-images-1.medium.com/max/1600/1*ZwE7OHKR5opvDCJJOw9KeQ.png)
 
 ## [颜色输出](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 
@@ -580,9 +970,9 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ## [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
 
-> VisualStudio代码中的Dash集成
+> VSCode中的Dash集成
 
-![Dash integration screenshot](https://cdn-images-1.medium.com/max/2000/1*sqGllC-pgXNaEBfB-cxG9Q.png)
+![Dash integration screenshot 图片](https://cdn-images-1.medium.com/max/2000/1*sqGllC-pgXNaEBfB-cxG9Q.png)
 
 ## [用shell命令编辑](https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell)
 
@@ -665,7 +1055,7 @@ VSCode团队从流行的编辑器中提供Keymaps,使VSCORE的过渡几乎是无
 
 ## 语法
 
-### [由达斯汀·桑德斯的老希望主题](https://vscodethemes.com/e/dustinsanders.an-old-hope-theme-vscode)
+### [An Old Hope Theme by Dustin Sanders](https://vscodethemes.com/e/dustinsanders.an-old-hope-theme-vscode)
 
 VSCode主题灵感来自遥远星系……
 
@@ -681,7 +1071,7 @@ VSCode主题灵感来自遥远星系……
   <img src="./themes/screenshots/wart.ariake-dark.png" width="600" />
 </a>
 
-### [Atom One Dark Theme ; Mahmoud Ali ](https://vscodethemes.com/e/akamud.vscode-theme-onedark)
+### [Atom One Dark Theme by Mahmoud Ali ](https://vscodethemes.com/e/akamud.vscode-theme-onedark)
 
 一个黑暗的主题基于atom.
 
@@ -691,7 +1081,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [Ayu by teabyii](https://vscodethemes.com/e/teabyii.ayu)
 
-与鲜艳的颜色和一个简单的主题有三个版本——黑暗,光和海市蜃楼一整天舒适的工作.
+一个鲜艳的颜色和有三个版本——黑暗,光和海市蜃楼的简单主题一整天舒适的工作.
 
 <a href="https://vscodethemes.com/e/teabyii.ayu">
   <img src="./themes/screenshots/teabyii.ayu.png" width="600" />
@@ -707,7 +1097,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [City Lights by Yummygumm](https://vscodethemes.com/e/Yummygum.city-lights-theme)
 
-🏙Yummygum's官方城市灯光套件
+🏙 Yummygum's官方城市灯光套件
 
 <a href="http://citylights.xyz">
   <img src="./themes/screenshots/city-lights-yummygum.png" width="600" />
@@ -715,7 +1105,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [Cobalt2 Theme Official by Wes Bos](https://vscodethemes.com/e/wesbos.theme-cobalt2)
 
-韦斯Bos.🔥官方主题
+Wes Bos 🔥官方主题
 
 <a href="https://vscodethemes.com/e/wesbos.theme-cobalt2">
   <img src="./themes/screenshots/wesbos.theme-cobalt2.png" width="600" />
@@ -723,7 +1113,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [Dracula Official by Dracula Theme](https://vscodethemes.com/e/dracula-theme.theme-dracula)
 
-官方吸血鬼主题.
+官方吸血鬼主题. 给 许多编辑器与shell等的暗黑主题
 
 <a href="https://vscodethemes.com/e/dracula-theme.theme-dracula">
   <img src="./themes/screenshots/dracula-theme.theme-dracula.png" width="600" />
@@ -731,7 +1121,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [Edge by Bogdan Lazar](https://vscodethemes.com/e/bogdanlazar.edge)
 
-一个简单的主题三个变体——夜空中明亮的颜色,宁静和海洋一整天舒适的工作.
+一个三个变体——夜空中明亮的颜色,宁静和海洋的简单主题,一整天舒适的工作.
 
 <a href="https://vscodethemes.com/e/bogdanlazar.edge">
   <img src="./themes/screenshots/bogdanlazar.edge-theme.png" width="600" />
@@ -739,7 +1129,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [Eva Theme by fisheva](https://vscodethemes.com/e/fisheva.eva-theme)
 
-丰富多彩的主题和语义的颜色代码.
+丰富多彩和semantic的颜色代码的主题.
 
 <a href="https://vscodethemes.com/e/fisheva.eva-theme">
   <img src="./themes/screenshots/fisheva.eva-theme.png" width="600" />
@@ -747,7 +1137,7 @@ VSCode主题灵感来自遥远星系……
 
 ### [Fairy Floss by nopjmp and sailorhg](https://vscodethemes.com/e/nopjmp.fairyfloss)
 
-一个有趣,purple-based淡/糖/白日梦由sailorhg fairyfloss主题.
+一个有趣,紫色-基调 柔和/糖果/梦话 仙女主题由sailorhg .
 
 <a href="https://vscodethemes.com/e/nopjmp.fairyfloss">
   <img src="./themes/screenshots/nopjmp.fairyfloss.png" width="600" />
@@ -763,7 +1153,7 @@ GitHub Visual Studio代码的主题.
 
 ### [Material Palenight Theme by whizkydee](https://vscodethemes.com/e/whizkydee.material-palenight-theme)
 
-一个优雅的,多汁的材料,像Visual Studio代码的主题.
+一个优雅的,多汁的类material主题.
 
 <a href="https://vscodethemes.com/e/whizkydee.material-palenight-theme">
   <img src="./themes/screenshots/whizkydee.material-palenight-theme.png" width="600" />
@@ -771,7 +1161,7 @@ GitHub Visual Studio代码的主题.
 
 ### [Material Theme by Mattia Astorino](https://vscodethemes.com/e/Equinusocio.vsc-material-theme)
 
-现在最史诗的主题为Visual Studio代码.
+现在最史诗的主题
 
 <a href="https://vscodethemes.com/e/Equinusocio.vsc-material-theme">
   <img src="./themes/screenshots/Equinusocio.vsc-material-theme.png" width="600" />
@@ -779,7 +1169,7 @@ GitHub Visual Studio代码的主题.
 
 ### [Mno by u29dc](https://vscodethemes.com/e/u29dc.mno)
 
-最小的单色的主题.
+最小的单色的主题. 
 
 <a href="https://vscodethemes.com/e/u29dc.mno">
   <img src="./themes/screenshots/u29dc.mno.png" width="600" />
@@ -787,7 +1177,7 @@ GitHub Visual Studio代码的主题.
 
 ### [Night Owl by Sarah Drasner](https://vscodethemes.com/e/sdras.night-owl)
 
-夜猫子的VScode的主题.
+夜猫子的VScode主题. 在白天工作也很好，但这个主题适合我们这些喜欢编码到深夜的人。 颜色选择考虑了有色盲和弱光环境的人可以使用的颜色。 也是基于阅读理解和最佳闪闪的有意义的对比决定。✨
 
 <a href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">
   <img src="./themes/screenshots/night-owl.png" width=600 />
@@ -795,7 +1185,7 @@ GitHub Visual Studio代码的主题.
 
 ### [Plastic by Will Stone](https://vscodethemes.com/e/will-stone.plastic)
 
-颜色选择考虑什么是色盲患者,在光线暗的情况下访问.
+一个简单主题
 
 <a href="https://vscodethemes.com/e/will-stone.plastic">
   <img src="./themes/screenshots/will-stone.plastic.png" width="600" />
@@ -803,7 +1193,7 @@ GitHub Visual Studio代码的主题.
 
 ### [Nord by arcticicestudio](https://vscodethemes.com/e/arcticicestudio.nord-visual-studio-code)
 
-✨
+北极，北蓝色干净，优雅的Visual Studio Code主题。
 
 <a href="https://vscodethemes.com/e/arcticicestudio.nord-visual-studio-code">
   <img src="./themes/screenshots/arcticicestudio.nord-visual-studio-code.png" width="600" />
@@ -811,15 +1201,15 @@ GitHub Visual Studio代码的主题.
 
 ### [Shades of Purple by Ahmad Awais](https://vscodethemes.com/e/ahmadawais.shades-of-purple)
 
-⚡专业主题精心挑选&紫色💜大胆色调来搭配你的VS Code.
+⚡精心挑选&紫色💜大胆色调专业主题,来搭配你的VS Code. 自定义样式VScode 主题
 
 <a href="https://vscodethemes.com/e/ahmadawais.shades-of-purple">
   <img src="./themes/screenshots/ahmadawais.shades-of-purple.png" width="600" />
 </a>
 
-# 跟随的目的地
+# 跟随的人
 
-一系列在Twitter中的不同VScode社区
+一系列在Twitter中的不同VScode社区能人
 
 - [@code](https://twitter.com/code)——官方Twitter VScode
 - [@auchenberg](https://twitter.com/auchenberg)项目经理- VScode
@@ -852,26 +1242,26 @@ GitHub Visual Studio代码的主题.
 
 ## 特别适合单元测试.
 
--   [分享生活](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)——Visual Studio生活分享使您能够实时地与他人协作编辑和调试,不管什么编程语言你使用或应用程序类型的建筑.
--   [在线TextMate软件主题编辑器](http://tmtheme-editor.herokuapp.com/)——因为VScode支持TextMate软件主题,您可以创建在这个在线编辑器,然后创建一个新的VScode包使用[你的代码](https://code.visualstudio.com/docs/extensions/yocode)工具
--   [哟——扩展生成器代码](https://code.visualstudio.com/docs/extensions/yocode)
--   [在代码](https://github.com/sozercan/OpenInCode)——macOS仪工具栏应用程序打开当前文件夹在Visual Studio代码
+-   [Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)——Visual Studio Live Share使您能够实时地与他人协作编辑和调试,不管什么编程语言你使用或构建的应用程序类型.
+-   [在线TextMate主题编辑器](http://tmtheme-editor.herokuapp.com/)——因为VScode支持TextMate软件主题,您可以在这个在线编辑器创建,然后通过使用[Yo 代码](https://code.visualstudio.com/docs/extensions/yocode)工具创建一个新的VScode包
+-   [Yo Code——扩展生成器](https://code.visualstudio.com/docs/extensions/yocode)
+-   [Open in Code](https://github.com/sozercan/OpenInCode)——macOS Finder工具栏应用,在当前文件夹打开VScode
 
 ![macOS Finder toolbar app to open current folder in Visual Studio Code animation](https://camo.githubusercontent.com/edbae5fe27d6c7af23218e60cb07e3a5061bbbab/687474703a2f2f692e696d6775722e636f6d2f4c6d56484978572e676966)
 
--   [他们](https://themer.mjswensen.com)轻松地创建自己的主题和代码(和匹配的其他工具).
--   [Azure工具Visual Studio代码](https://github.com/bradygaster-zz/azure-tools-vscode)——这个扩展Visual Studio代码给Azure开发者一些方便的命令在编辑器中创建或直接访问资源.
+-   [Themer](https://themer.mjswensen.com) - 轻松地创建自己的VScode主题(和匹配的其他工具).
+-   [VScode 的 Azure工具](https://github.com/bradygaster-zz/azure-tools-vscode)——这个VScode扩展给Azure开发者一些在编辑器中创建或直接访问资源的方便命令.
 
 ![azure-tools-vscode](https://raw.githubusercontent.com/johnpapa/vscode-azure-functions-tools/master/images/json-schema-function.gif)
 
--   [记下预览](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)——减价预览增强是一个扩展,它为您提供了许多有用的功能,如自动滚动同步,数学排版,美人鱼,PlantUML,pandoc,PDF导出,代码块,表现作家,等等很多的想法启发减价预览+和RStudio减价.
+-   [markdown 预览](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)—— Markdown Preview Enhanced 是一个扩展,它为您提供了许多有用的功能,如自动滚动同步,数学排版,mermaid,PlantUML,pandoc,PDF导出,代码块,外观写作,等等很多的想法启发来自markdown预览+和RStudio markdown.
 
 # 贡献
 
-贡献欢迎![读了](CONTRIBUTING.md)第一.
+贡献欢迎![首先读](CONTRIBUTING.zh.md).
 
 # 许可证
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-尽可能在法律下,[瓦雷利Iatsko](https://viatsko.me)已经免除了所有的版权和相关或邻近的这项工作.
+尽可能在法律下,[Valerii Iatsko](https://viatsko.me)已经免除了这项工作的所有的版权和相关或邻近.
